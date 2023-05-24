@@ -42,7 +42,7 @@ nav .fa{
 .nav-links ul li a{
     color: rgb(230, 230, 230);
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
 }
 .nav-links ul li::after{
     content: '';
@@ -70,7 +70,8 @@ nav .fa{
     font-size: 62px;
 }
 .text-box p{
-    margin: 10px 0 40px;
+    margin: 20px 0px 40px;
+    line-height: 23px;
     font-size: 14px;
     color: rgb(230, 230, 230);
 }
