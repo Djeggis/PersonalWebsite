@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content="with=device-width, initial-scale=1.0">
+        <title>test</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/djeggis_bb.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">CODING</a></li>
+                        <li><a href="">ART</a></li>
+                        <li><a href="">GAME</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="extra-links">
+                <button onclick="window.location.href='https://twitter.com/djeggis';">
+                    <img src="images/Twitter-logo.svg.png">
+                </button>
+                <button onclick="window.location.href='https://github.com/Djeggis';">
+                    <img src="images/github-mark.png">
+                </button>
+                <button onclick="window.location.href='https://www.twitch.tv/djeggis';">
+                    <img src="images/twitch-logo-png-1857.png">
+                </button>
+            </div>
+            <div class="text-box">
+                <h1>Gaming</h1>
+                <p>i am gaming</p>
+            </div>
+        </section>
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>
