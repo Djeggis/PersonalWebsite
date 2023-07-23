@@ -14,7 +14,7 @@
 
 nav{
     display: flex;
-    padding: 2% 4%;
+    padding: 20px 33px;
     justify-content: space-between;
     align-items: center;
 }
@@ -79,7 +79,8 @@ nav .fa{
 .extra-links{
     position: absolute;
     top: 165px;
-    left: 4.3%;
+    left: 35px;
+    word-spacing: 3px;
 }
 
 .extra-links button{
