@@ -68,12 +68,16 @@ nav .fa{
 }
 .text-box h1{
     font-size: 62px;
+    margin-bottom: 10px;
 }
 .text-box p{
     margin: 20px 0px 40px;
     line-height: 23px;
     font-size: 14px;
     color: rgb(230, 230, 230);
+}
+.text-box hr{
+    margin: 30px;
 }
 
 .extra-links{
