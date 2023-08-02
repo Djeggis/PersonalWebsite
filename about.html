@@ -3,7 +3,7 @@
     <head>
         <meta name = "viewport" content="with=device-width, initial-scale=1.0">
         <title>Djeggis Corner</title>
-        <script src = "index.js"></script>
+        <script src = "about.js"></script>
         <link rel="icon" href="images/icon.png">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body>
+    <body onload = "showSlides(1)">
         <section class="header">
             <nav>
                 <a href="index.html"><img src="images/djeggis_bb.png"></a>
@@ -39,25 +39,41 @@
                     <img src="images/youtube-logo-png-2067.png">
                 </button>
             </div>
-            <div class="text-box">
-                <h1>ABOUT ME</h1>
-                <p1>I was born in the US on February 26 - my parents are both from Indonesia. My childhood was fairly innocuous, and I attended 
-                    public schools for all of my primary and secondary schooling. I am currently attending university for Computer Science but 
-                    am set to graduate this fall.
-                </p1>
 
-                <hr>
+            <div class="slideshow-container">
+                <div class = "slideshow fade">
+                    <div class = "titletext">ABOUT ME</div>
+                    <img src="images/banner.png" style="width:100%">
+                    <div class = "captiontext">I was born in the US on February 26 - my parents are both from Indonesia. My childhood was fairly innocuous, and I attended 
+                        public schools for all of my primary and secondary schooling. I am currently attending university for Computer Science but 
+                        am set to graduate this fall.</div>
+                </div>
+                <div class = "slideshow fade">
+                    <div class = "titletext">ORIGIN OF "DJEGGIS"</div>
+                    <img src="images/djeggis.jpg" style="width:100%">
+                    <div class = "captiontext">The name "Djeggis" was actually coined by one of my other friends. In the game "Rainbow Six Siege" there is a character named 
+                        "Jäger"; my friend liked to give funny nicknames to the characters in the game, and this character was coined as "Djeggis". At 
+                        the time I was playing alot of Siege, specifically Jäger, and I took a liking to the name, especially since I wanted to get a new 
+                        net tag. Thus, I took on the alias "Djeggis".</div>
+                </div>
+                <div class = "slideshow fade">
+                    <div class = "titletext">HOBBIES</div>
+                    <!-- image maybe? -->
+                    <div class = "captiontext"></div>
+                </div>
 
-                <h1>ORIGIN OF "DJEGGIS"</h1>
-                <p1>The name "Djeggis" was actually coined by one of my other friends. In the game "Rainbow Six Siege" there is a character named 
-                    "Jäger"; my friend liked to give funny nicknames to the characters in the game, and this character was coined as "Djeggis". At 
-                    the time I was playing alot of Siege, specifically Jäger, and I took a liking to the name, especially since I wanted to get a new 
-                    net tag. Thus, I took on the alias "Djeggis".
-                </p1>
+                <!-- next/prev buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
 
-                <hr>
+            <br>
 
-                <h1>HOBBIES</h1>
+            <!-- slideshow guide -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </section>
 
